@@ -1,0 +1,9 @@
+{
+  "text.all-the-magic.casts.0": "%s casts: %s",
+  "text.all-the-magic.casts.1": "%s chants: %s",
+  "text.all-the-magic.casts.2": "%s exclaims: %s",
+  "text.all-the-magic.casts.3": "%s whispers: %s",
+  "text.all-the-magic.casts.fail.0": "Your spell broke up!",
+  "text.all-the-magic.casts.fail.1": "Your spell has spiraled out of control!",
+  "text.all-the-magic.casts.fail.2": "Your spell has dispersed!"
+}

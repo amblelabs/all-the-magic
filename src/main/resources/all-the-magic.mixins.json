@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.drtheo.allthemagic.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "spellcasting.PlayerEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

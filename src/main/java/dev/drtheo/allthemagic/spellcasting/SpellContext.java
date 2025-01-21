@@ -13,10 +13,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public record SpellContext(Spellcaster caster, Target target) {
+public record SpellContext(Spellcaster caster, Target target, Invoker invoker) {
 
     public World world() {
         return caster.getCasterWorld();
+    }
+
+    public enum Invoker {
+        VERBAL,
+        DIRECT
     }
 
     public static class Builder<T extends LivingEntity & Spellcaster> {
@@ -32,12 +37,12 @@ public record SpellContext(Spellcaster caster, Target target) {
             return new Builder<>((T) player);
         }
 
-        public SpellContext build(Spell spell) {
-            return SpellContext.create(spell, this.caster);
+        public SpellContext build(Spell spell, Invoker invoker) {
+            return SpellContext.create(spell, this.caster, invoker);
         }
     }
 
-    private static <T extends LivingEntity & Spellcaster> SpellContext create(Spell spell, T caster) {
+    private static <T extends LivingEntity & Spellcaster> SpellContext create(Spell spell, T caster, Invoker invoker) {
         float range = spell.getRange(caster);
         HitResult hit = ProjectileUtil.getCollision(caster, Entity::canHit, range);
 
@@ -47,7 +52,7 @@ public record SpellContext(Spellcaster caster, Target target) {
             case ENTITY -> new EntityTarget(((EntityHitResult) hit).getEntity());
         };
 
-        return new SpellContext(caster, target);
+        return new SpellContext(caster, target, invoker);
     }
 
     public interface Spellcaster {

@@ -12,9 +12,12 @@ public abstract class Spell {
     protected final double threshold;
 
     public Spell(Identifier id) {
+        this(id, 0.5);
+    }
+
+    public Spell(Identifier id, double threshold) {
         this.id = id;
 
-        double threshold = 0.5;
         VerbalComponent verbal = this.verbal();
 
         if (verbal != null)

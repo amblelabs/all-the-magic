@@ -2,10 +2,7 @@ package dev.drtheo.allthemagic.spellcasting;
 
 import dev.drtheo.allthemagic.AllTheMagic;
 import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.BlindSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.FireballSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.LightningSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.SingularitySpell;
+import dev.drtheo.allthemagic.spellcasting.spell.impl.*;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
 import net.minecraft.registry.*;
@@ -25,6 +22,7 @@ public class SpellRegistry {
     public static final Spell BLIND = register(new BlindSpell());
     public static final Spell FIREBALL = register(new FireballSpell());
     public static final Spell LIGHTNING = register(new LightningSpell());
+    public static final Spell FREEZE = register(new FreezeSpell());
 
     private static Spell register(Spell spell) {
         return Registry.register(REGISTRY, spell.id(), spell);

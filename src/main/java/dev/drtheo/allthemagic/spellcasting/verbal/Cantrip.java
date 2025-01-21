@@ -37,11 +37,9 @@ public class Cantrip {
 
     public <T extends LivingEntity & SpellContext.Spellcaster> SpellQueue cast(SpellContext.Builder<T> builder) {
         SpellQueue queue = new SpellQueue();
-        int lastSuccess = this.cursor;
 
         for (int i = 0; i < SpellRegistry.REGISTRY.size(); i++) {
             Spell spell = SpellRegistry.REGISTRY.get(i);
-
             Spell.VerbalComponent.Score score = spell.verbal().score(this);
 
             if (!score.success()) {
@@ -50,7 +48,7 @@ public class Cantrip {
             }
 
             this.lastCursor = this.cursor;
-            SpellContext ctx = builder.build(spell);
+            SpellContext ctx = builder.build(spell, SpellContext.Invoker.VERBAL);
 
             System.out.println("Spell: " + spell.id() + "; integrity: " + score.integrity());
             if (spell.canCast(ctx, score.integrity()))

@@ -33,7 +33,7 @@ public class FireballSpell extends Spell {
         double g = target.getY() - from.getY();
         double h = target.getZ() - (from.getZ() + vec3d.z * 4.0);
 
-        int power = (int) ((integrity - this.threshold) * 8);
+        int power = (int) ((integrity - this.threshold) * 16);
 
         FireballEntity fireball = new FireballEntity(
                 context.world(), context.caster().asPlayer(), f, g, h, power

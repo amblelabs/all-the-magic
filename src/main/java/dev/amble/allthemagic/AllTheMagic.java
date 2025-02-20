@@ -1,4 +1,4 @@
-package dev.drtheo.allthemagic;
+package dev.amble.allthemagic;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -9,7 +9,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 
-import dev.drtheo.allthemagic.spellcasting.SpellcastingSystem;
+import dev.amble.allthemagic.spellcasting.SpellcastingSystem;
 
 public class AllTheMagic implements ModInitializer {
 

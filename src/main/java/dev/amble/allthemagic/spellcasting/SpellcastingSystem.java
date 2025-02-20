@@ -1,7 +1,7 @@
-package dev.drtheo.allthemagic.spellcasting;
+package dev.amble.allthemagic.spellcasting;
 
-import dev.drtheo.allthemagic.spellcasting.config.SpellcastingConfig;
-import dev.drtheo.allthemagic.spellcasting.verbal.VerbalSpellCasting;
+import dev.amble.allthemagic.spellcasting.config.SpellcastingConfig;
+import dev.amble.allthemagic.spellcasting.verbal.VerbalSpellCasting;
 
 public class SpellcastingSystem {
 

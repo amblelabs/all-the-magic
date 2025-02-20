@@ -1,4 +1,4 @@
-package dev.drtheo.allthemagic.client;
+package dev.amble.allthemagic.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

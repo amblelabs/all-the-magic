@@ -1,16 +1,16 @@
-package dev.drtheo.allthemagic.spellcasting;
+package dev.amble.allthemagic.spellcasting;
 
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
 
 import net.minecraft.registry.*;
 
-import dev.drtheo.allthemagic.AllTheMagic;
-import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.BlindSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.FireballSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.LightningSpell;
-import dev.drtheo.allthemagic.spellcasting.spell.impl.SingularitySpell;
+import dev.amble.allthemagic.AllTheMagic;
+import dev.amble.allthemagic.spellcasting.spell.Spell;
+import dev.amble.allthemagic.spellcasting.spell.impl.BlindSpell;
+import dev.amble.allthemagic.spellcasting.spell.impl.FireballSpell;
+import dev.amble.allthemagic.spellcasting.spell.impl.LightningSpell;
+import dev.amble.allthemagic.spellcasting.spell.impl.SingularitySpell;
 
 public class SpellRegistry {
 

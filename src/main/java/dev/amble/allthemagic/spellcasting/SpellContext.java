@@ -1,4 +1,4 @@
-package dev.drtheo.allthemagic.spellcasting;
+package dev.amble.allthemagic.spellcasting;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-import dev.drtheo.allthemagic.spellcasting.spell.Spell;
+import dev.amble.allthemagic.spellcasting.spell.Spell;
 
 public record SpellContext(Spellcaster caster, Target target) {
 

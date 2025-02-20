@@ -15,10 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.drtheo.allthemagic.client.AllTheMagicClient"
+      "dev.amble.allthemagic.client.AllTheMagicClient"
     ],
     "main": [
-      "dev.drtheo.allthemagic.AllTheMagic"
+      "dev.amble.allthemagic.AllTheMagic"
     ]
   },
   "mixins": [

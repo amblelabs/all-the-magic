@@ -1,4 +1,4 @@
-package dev.drtheo.allthemagic.event;
+package dev.amble.allthemagic.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;

@@ -1,6 +1,7 @@
 plugins {
     id 'fabric-loom' version '1.9-SNAPSHOT'
     id 'maven-publish'
+    id "com.diffplug.spotless" version "6.20.0"
 }
 
 version = project.mod_version
@@ -97,5 +98,29 @@ publishing {
         // Notice: This block does NOT have the same function as the block in the top level.
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
+    }
+}
+
+spotless {
+    format 'misc', {
+        // define the files to apply `misc` to
+        target '*.gradle', '.gitattributes', '.gitignore'
+
+        // define the steps to apply to those files
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+
+    java {
+        //eclipse()
+
+        removeUnusedImports()
+        importOrder('java', 'javax', '', 'net.minecraft', group)
+
+        indentWithSpaces()
+        trimTrailingWhitespace()
+
+        formatAnnotations()
     }
 }

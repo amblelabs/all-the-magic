@@ -1,11 +1,13 @@
 package dev.drtheo.allthemagic.mixin.spellcasting;
 
-import dev.drtheo.allthemagic.spellcasting.SpellContext;
+import org.spongepowered.asm.mixin.Mixin;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.spongepowered.asm.mixin.Mixin;
+
+import dev.drtheo.allthemagic.spellcasting.SpellContext;
 
 @Mixin(PlayerEntity.class)
 @SuppressWarnings("AddedMixinMembersNamePattern")

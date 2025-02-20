@@ -1,13 +1,13 @@
 package dev.drtheo.allthemagic.spellcasting.spell.impl;
 
-import dev.drtheo.allthemagic.AllTheMagic;
-import dev.drtheo.allthemagic.spellcasting.SpellContext;
-import dev.drtheo.allthemagic.spellcasting.spell.Spell;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.util.Identifier;
+
+import dev.drtheo.allthemagic.AllTheMagic;
+import dev.drtheo.allthemagic.spellcasting.SpellContext;
+import dev.drtheo.allthemagic.spellcasting.spell.Spell;
 
 public class BlindSpell extends Spell {
 

@@ -1,10 +1,11 @@
 package dev.drtheo.allthemagic.spellcasting.spell.impl;
 
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
+
 import dev.drtheo.allthemagic.AllTheMagic;
 import dev.drtheo.allthemagic.spellcasting.SpellContext;
 import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
 
 public class SingularitySpell extends Spell {
 

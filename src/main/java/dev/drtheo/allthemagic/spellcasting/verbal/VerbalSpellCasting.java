@@ -1,17 +1,19 @@
 package dev.drtheo.allthemagic.spellcasting.verbal;
 
-import dev.drtheo.allthemagic.AllTheMagic;
-import dev.drtheo.allthemagic.spellcasting.SpellContext;
-import dev.drtheo.allthemagic.spellcasting.SpellQueue;
-import dev.drtheo.allthemagic.spellcasting.SpellcastingSystem;
 import net.fabricmc.fabric.api.message.v1.ServerMessageEvents;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
+
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+
+import dev.drtheo.allthemagic.AllTheMagic;
+import dev.drtheo.allthemagic.spellcasting.SpellContext;
+import dev.drtheo.allthemagic.spellcasting.SpellQueue;
+import dev.drtheo.allthemagic.spellcasting.SpellcastingSystem;
 
 public class VerbalSpellCasting {
 

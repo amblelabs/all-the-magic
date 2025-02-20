@@ -1,6 +1,5 @@
 package dev.drtheo.allthemagic.spellcasting;
 
-import dev.drtheo.allthemagic.spellcasting.spell.Spell;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +11,8 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+
+import dev.drtheo.allthemagic.spellcasting.spell.Spell;
 
 public record SpellContext(Spellcaster caster, Target target) {
 

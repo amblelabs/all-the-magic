@@ -1,11 +1,11 @@
 package dev.drtheo.allthemagic.spellcasting.spell.impl;
 
+import net.minecraft.entity.projectile.FireballEntity;
+import net.minecraft.util.math.Vec3d;
+
 import dev.drtheo.allthemagic.AllTheMagic;
 import dev.drtheo.allthemagic.spellcasting.SpellContext;
 import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.projectile.FireballEntity;
-import net.minecraft.util.math.Vec3d;
 
 public class FireballSpell extends Spell {
 

@@ -1,9 +1,9 @@
 package dev.drtheo.allthemagic.spellcasting;
 
-import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import dev.drtheo.allthemagic.spellcasting.spell.Spell;
 
 public class SpellQueue {
 

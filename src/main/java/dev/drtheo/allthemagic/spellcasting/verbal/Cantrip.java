@@ -1,14 +1,15 @@
 package dev.drtheo.allthemagic.spellcasting.verbal;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import net.minecraft.entity.LivingEntity;
+
 import dev.drtheo.allthemagic.spellcasting.SpellContext;
 import dev.drtheo.allthemagic.spellcasting.SpellQueue;
 import dev.drtheo.allthemagic.spellcasting.SpellRegistry;
 import dev.drtheo.allthemagic.spellcasting.SpellcastingSystem;
 import dev.drtheo.allthemagic.spellcasting.spell.Spell;
-import net.minecraft.entity.LivingEntity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Cantrip {
 

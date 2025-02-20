@@ -1,8 +1,8 @@
-package dev.drtheo.allthemagic.spellcasting.config;
-
-import net.ricecode.similarity.*;
+package dev.amble.magic.spellcasting.config;
 
 import java.util.function.Supplier;
+
+import net.ricecode.similarity.*;
 
 public class SpellcastingConfig {
 

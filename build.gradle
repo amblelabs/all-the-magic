@@ -1,9 +1,13 @@
 plugins {
-    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'fabric-loom' version '1.9-SNAPSHOT'
     id 'maven-publish'
+    id "com.diffplug.spotless" version "6.20.0"
 }
 
-version = project.mod_version
+
+apply from: 'versioning.gradle'
+
+version = getCurrentVersion()
 group = project.maven_group
 
 base {
@@ -15,11 +19,13 @@ loom {
 }
 
 repositories {
-    // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
+    maven {
+        url "https://jitpack.io"
+
+        metadataSources {
+            artifact() // Look directly for artifact
+        }
+    }
 }
 
 dependencies {
@@ -32,6 +38,10 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     include(implementation("net.ricecode:string-similarity:${project.string_similarity_version}"))
+
+    modImplementation("com.github.amblelabs:modkit:${project.modkit_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
 }
 
 processResources {
@@ -91,5 +101,29 @@ publishing {
         // Notice: This block does NOT have the same function as the block in the top level.
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
+    }
+}
+
+spotless {
+    format 'misc', {
+        // define the files to apply `misc` to
+        target '*.gradle', '.gitattributes', '.gitignore'
+
+        // define the steps to apply to those files
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+
+    java {
+        //eclipse()
+
+        removeUnusedImports()
+        importOrder('java', 'javax', '', 'net.minecraft', group)
+
+        indentWithSpaces()
+        trimTrailingWhitespace()
+
+        formatAnnotations()
     }
 }

@@ -1,8 +1,9 @@
-package dev.drtheo.allthemagic.event;
+package dev.amble.magic.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 import net.fabricmc.fabric.api.message.v1.ServerMessageEvents;
+
 import net.minecraft.network.message.MessageType;
 import net.minecraft.network.message.SignedMessage;
 import net.minecraft.server.network.ServerPlayerEntity;

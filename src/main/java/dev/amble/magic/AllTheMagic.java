@@ -1,13 +1,15 @@
-package dev.drtheo.allthemagic;
+package dev.amble.magic;
 
-import dev.drtheo.allthemagic.spellcasting.SpellcastingSystem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import dev.amble.magic.spellcasting.SpellcastingSystem;
 
 public class AllTheMagic implements ModInitializer {
 

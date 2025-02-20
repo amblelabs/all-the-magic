@@ -4,7 +4,10 @@ plugins {
     id "com.diffplug.spotless" version "6.20.0"
 }
 
-version = project.mod_version
+
+apply from: 'versioning.gradle'
+
+version = getCurrentVersion()
 group = project.maven_group
 
 base {

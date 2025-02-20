@@ -1,9 +1,9 @@
-package dev.amble.allthemagic.spellcasting;
+package dev.amble.magic.spellcasting;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import dev.amble.allthemagic.spellcasting.spell.Spell;
+import dev.amble.magic.spellcasting.spell.Spell;
 
 public class SpellQueue {
 

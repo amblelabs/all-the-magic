@@ -1,7 +1,7 @@
-package dev.amble.allthemagic.spellcasting;
+package dev.amble.magic.spellcasting;
 
-import dev.amble.allthemagic.spellcasting.config.SpellcastingConfig;
-import dev.amble.allthemagic.spellcasting.verbal.VerbalSpellCasting;
+import dev.amble.magic.spellcasting.config.SpellcastingConfig;
+import dev.amble.magic.spellcasting.verbal.VerbalSpellCasting;
 
 public class SpellcastingSystem {
 

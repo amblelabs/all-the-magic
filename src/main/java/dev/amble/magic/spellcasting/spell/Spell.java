@@ -1,12 +1,12 @@
-package dev.amble.allthemagic.spellcasting.spell;
+package dev.amble.magic.spellcasting.spell;
 
 import net.ricecode.similarity.StringSimilarityService;
 
 import net.minecraft.util.Identifier;
 
-import dev.amble.allthemagic.spellcasting.SpellContext;
-import dev.amble.allthemagic.spellcasting.SpellcastingSystem;
-import dev.amble.allthemagic.spellcasting.verbal.Cantrip;
+import dev.amble.magic.spellcasting.SpellContext;
+import dev.amble.magic.spellcasting.SpellcastingSystem;
+import dev.amble.magic.spellcasting.verbal.Cantrip;
 
 public abstract class Spell {
 

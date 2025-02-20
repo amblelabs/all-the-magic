@@ -1,4 +1,4 @@
-package dev.amble.allthemagic.mixin.spellcasting;
+package dev.amble.magic.mixin.spellcasting;
 
 import org.spongepowered.asm.mixin.Mixin;
 
@@ -7,7 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-import dev.amble.allthemagic.spellcasting.SpellContext;
+import dev.amble.magic.spellcasting.SpellContext;
 
 @Mixin(PlayerEntity.class)
 @SuppressWarnings("AddedMixinMembersNamePattern")

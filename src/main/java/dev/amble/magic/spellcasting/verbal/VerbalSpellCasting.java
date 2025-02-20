@@ -1,4 +1,4 @@
-package dev.amble.allthemagic.spellcasting.verbal;
+package dev.amble.magic.spellcasting.verbal;
 
 import net.fabricmc.fabric.api.message.v1.ServerMessageEvents;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
@@ -10,10 +10,10 @@ import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 
-import dev.amble.allthemagic.AllTheMagic;
-import dev.amble.allthemagic.spellcasting.SpellContext;
-import dev.amble.allthemagic.spellcasting.SpellQueue;
-import dev.amble.allthemagic.spellcasting.SpellcastingSystem;
+import dev.amble.magic.AllTheMagic;
+import dev.amble.magic.spellcasting.SpellContext;
+import dev.amble.magic.spellcasting.SpellQueue;
+import dev.amble.magic.spellcasting.SpellcastingSystem;
 
 public class VerbalSpellCasting {
 

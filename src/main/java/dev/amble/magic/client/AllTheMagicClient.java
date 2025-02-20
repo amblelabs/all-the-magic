@@ -1,4 +1,4 @@
-package dev.amble.allthemagic.client;
+package dev.amble.magic.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

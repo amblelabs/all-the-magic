@@ -15,10 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.amble.allthemagic.client.AllTheMagicClient"
+      "dev.amble.magic.client.AllTheMagicClient"
     ],
     "main": [
-      "dev.amble.allthemagic.AllTheMagic"
+      "dev.amble.magic.AllTheMagic"
     ]
   },
   "mixins": [

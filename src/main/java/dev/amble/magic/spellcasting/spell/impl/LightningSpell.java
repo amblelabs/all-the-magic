@@ -1,12 +1,12 @@
-package dev.amble.allthemagic.spellcasting.spell.impl;
+package dev.amble.magic.spellcasting.spell.impl;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.util.math.Vec3d;
 
-import dev.amble.allthemagic.AllTheMagic;
-import dev.amble.allthemagic.spellcasting.SpellContext;
-import dev.amble.allthemagic.spellcasting.spell.Spell;
+import dev.amble.magic.AllTheMagic;
+import dev.amble.magic.spellcasting.SpellContext;
+import dev.amble.magic.spellcasting.spell.Spell;
 
 public class LightningSpell extends Spell {
 

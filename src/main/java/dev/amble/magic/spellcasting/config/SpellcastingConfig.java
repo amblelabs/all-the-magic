@@ -1,4 +1,4 @@
-package dev.amble.allthemagic.spellcasting.config;
+package dev.amble.magic.spellcasting.config;
 
 import java.util.function.Supplier;
 

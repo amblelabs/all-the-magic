@@ -1,4 +1,4 @@
-package dev.amble.allthemagic.event;
+package dev.amble.magic.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;

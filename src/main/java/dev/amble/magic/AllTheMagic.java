@@ -1,7 +1,12 @@
 package dev.amble.magic;
 
+import dev.amble.magic.core.ATMBlocks;
+import dev.amble.magic.core.ATMEntityTypes;
+import dev.amble.magic.core.ATMItems;
+import dev.amble.magic.core.entities.DeathWhisperEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +28,16 @@ public class AllTheMagic implements ModInitializer {
         ServerLifecycleEvents.SERVER_STARTED.register(server -> AllTheMagic.server = server);
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> AllTheMagic.server = null);
         SpellcastingSystem.init();
+        registerEntityAttributes();
+
+        // Register Blocks, Entities, and Items
+        ATMBlocks.initialize();
+        ATMEntityTypes.initialize();
+        ATMItems.initialize();
+    }
+
+    public void registerEntityAttributes() {
+        FabricDefaultAttributeRegistry.register(ATMEntityTypes.DEATH_WHISPER, DeathWhisperEntity.createLivingAttributes());
     }
 
     public static Identifier id(String path) {

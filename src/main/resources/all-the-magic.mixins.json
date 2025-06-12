@@ -4,6 +4,7 @@
   "package": "dev.amble.magic.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "necromancy.EntityDeathMixin",
     "spellcasting.PlayerEntityMixin"
   ],
   "client": [

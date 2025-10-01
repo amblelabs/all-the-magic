@@ -13,7 +13,7 @@ public class ChatScreenMixin {
 
     @Redirect(method = "setChatFromHistory", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/widget/TextFieldWidget;setText(Ljava/lang/String;)V"))
     public void setText(TextFieldWidget instance, String text) {
-        if (!text.startsWith(SpellcastingSystem.config().verbalSpellPrefix) && !MinecraftClient.getInstance().player.isCreative())
+        //if (!text.startsWith(SpellcastingSystem.config().verbalSpellPrefix) && !MinecraftClient.getInstance().player.isCreative())
             instance.setText(text);
     }
 }

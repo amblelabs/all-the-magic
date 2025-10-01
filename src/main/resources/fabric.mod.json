@@ -2,21 +2,23 @@
   "schemaVersion": 1,
   "id": "all-the-magic",
   "version": "${version}",
-  "name": "All the magic",
+  "name": "All The Magic",
   "description": "",
-  "authors": [],
+  "authors": [
+    "AmbleLabs"
+  ],
   "contact": {
-    "repo": "https://github.com/DrTheodor/all-the-magic"
+    "repo": "https://github.com/amblelabs/all-the-magic"
   },
   "license": "LGPL-3.0",
   "icon": "assets/all-the-magic/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.drtheo.allthemagic.client.AllTheMagicClient"
+      "dev.amble.magic.client.AllTheMagicClient"
     ],
     "main": [
-      "dev.drtheo.allthemagic.AllTheMagic"
+      "dev.amble.magic.AllTheMagic"
     ]
   },
   "mixins": [
@@ -26,6 +28,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "amblekit": ">=1.1.5-1.20.1-beta"
   }
 }
